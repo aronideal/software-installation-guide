@@ -1,0 +1,15 @@
+
+
+cd /usr/local
+
+tar -zxvf hadoop-2.5.1.tar.gz
+
+export HADOOP_PREFIX=/usr/local/hadoop-2.5.1
+
+cd $HADOOP_PREFIX
+
+mkdir input
+cp etc/hadoop/*.xml input
+./bin/hadoop jar share/hadoop/mapreduce/hadoop-mapreduce-examples-2.5.1.jar grep input output 'dfs[a-z.]+'
+cat output/*
+

@@ -1,0 +1,25 @@
+#!/bin/sh
+
+yum install -y gcc make wget
+
+OLD_LOCATION=`pwd`
+cd /tmp/
+
+wget http://download.redis.io/releases/redis-2.8.24.tar.gz
+tar -zxvf redis-2.8.24.tar.gz
+rm -rf redis-2.8.24.tar.gz
+
+cd redis-2.8.24
+
+make MALLOC=libc
+make install
+
+rm -rf redis-2.8.24
+
+cd $OLD_LOCATION
+
+iptables -I INPUT -p tcp --dport 6379 -j ACCEPT
+service iptables save
+
+echo /usr/local/bin/redis-server >> /etc/rc.d/rc.local
+/usr/local/bin/redis-server

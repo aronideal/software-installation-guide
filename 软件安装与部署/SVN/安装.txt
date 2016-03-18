@@ -1,0 +1,48 @@
+# groupadd svngroup
+# useradd -d /home/svn -g svngroup -m svn
+# passwd svn
+--- svn2D3QN833
+# su - svn
+
+$ sudo yum install subversion -y
+$ sudo yum install mod_dav_svn -y
+
+$ mkdir -p $HOME/.svnrepos/
+
+---------------------------------------------------------------------
+$ # Create an FSFS-backed repository
+$ svnadmin create --fs-type fsfs $HOME/.svnrepos/my-repos
+$
+$ # Create a Berkeley-DB-backed repository
+$ svnadmin create --fs-type bdb $HOME/.svnrepos/my-repos
+$
+---------------------------------------------------------------------
+
+$ svn mkdir -m "Create directory structure." file://$HOME/.svnrepos/my-repos/trunk file://$HOME/.svnrepos/my-repos/branches file://$HOME/.svnrepos/my-repos/tags
+
+$ vim /home/svn/.svnrepos/my-repos/conf/passwd
+----------------------------
+[users]
+user1 = 123321
+----------------------------
+
+$ vim /home/svn/.svnrepos/my-repos/conf/authz
+----------------------------
+[groups]
+developer = user1
+
+[/]
+* =
+
+[my-repos:/]
+@developer = rw
+* = r
+----------------------------
+
+$ vim /home/svn/.svnrepos/my-repos/conf/svnserve.conf
+
+
+$ iptables -I INPUT -p tcp --dport 3690 -j ACCEPT
+$ service iptables save
+
+$ svnserve -d -r $HOME/.svnrepos --listen-port 3690

@@ -1,0 +1,18 @@
+
+
+cd /tmp/
+
+chmod +x jdk-6u45-linux-x64-rpm.bin
+
+./jdk-6u45-linux-x64-rpm.bin
+
+rm -rf sun-javadb-* /opt/sun jdk-6u45-linux-amd64.rpm jdk-6u45-linux-x64-rpm.bin
+
+vim /etc/profile
+	JAVA_HOME=/usr/java/jdk1.6.0_45
+	JRE_HOME=$JAVA_HOME/jre
+	CLASSPATH=.:$JAVA_HOME/lib/tools.jar:$JAVA_HOME/lib/dt.jar
+	export JAVA_HOME JRE_HOME CLASSPATH
+	PATH=$JAVA_HOME/bin:$PATH
+
+source /etc/profile

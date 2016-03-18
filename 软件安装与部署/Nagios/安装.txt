@@ -1,0 +1,56 @@
+
+-- 必须先安装apache服务器
+
+yum install -y unzip
+
+useradd -m nagios
+passwd nagios
+
+groupadd nagios
+usermod -G nagios nagios
+
+groupadd nagcmd
+usermod -a -G nagcmd nagios
+usermod -a -G nagcmd daemon
+
+
+cd /tmp
+
+tar -zxvf nagios-4.1.1.tar.gz
+cd nagios-4.1.1
+
+./configure --with-command-group=nagcmd
+make all
+
+make install
+make install-init
+make install-config
+make install-commandmode
+
+
+vi /usr/local/nagios/etc/objects/contacts.cfg
+
+
+make install-webconf
+
+
+htpasswd2 -c /usr/local/nagios/etc/htpasswd.users nagiosadmin
+
+service apache2 restart
+
+
+tar -zxvf nagios-plugins-2.1.1.tar.gz
+cd nagios-plugins-2.1.1
+
+./configure --with-nagios-user=nagios --with-nagios-group=nagios
+make
+make install
+
+chkconfig --add nagios
+chkconfig nagios on
+
+
+/usr/local/nagios/bin/nagios -v /usr/local/nagios/etc/nagios.cfg
+
+service nagios start
+

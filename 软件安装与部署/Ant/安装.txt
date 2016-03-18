@@ -1,0 +1,16 @@
+
+°²×°JDK
+
+cd /tmp
+
+mv apache-ant-1.9.4-bin.tar.gz /usr/local
+
+cd /usr/local
+
+tar -zxvf apache-ant-1.9.4-bin.tar.gz
+rm -rf apache-ant-1.9.4-bin.tar.gz
+
+ln -s /usr/local/apache-ant-1.9.4 /usr/local/ant
+
+ANT_HOME=/usr/local/ant
+export ANT_HOME

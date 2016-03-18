@@ -1,0 +1,24 @@
+
+安装java环境，请查看安装步骤。
+
+（将安装包zookeeper-3.4.6.tar.gz上传到/tmp目录下）
+
+cd /usr/local
+
+tar zxvf /tmp/zookeeper-3.4.6.tar.gz
+
+cd zookeeper-3.4.6
+cp conf/zoo_sample.cfg conf/zoo.cfg
+
+vim conf/zoo.cfg
+-----------------------
+tickTime=2000
+dataDir=/var/lib/zookeeper
+clientPort=2181
+-----------------------
+
+bin/zkServer.sh restart
+tail -f zookeeper.out
+
+ps -ef | grep zookeeper
+

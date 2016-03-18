@@ -1,0 +1,27 @@
+#!/bin/sh
+
+OLD_LOCATION=`pwd`
+cd /tmp/
+
+echo "[mongodb-org-3.0]" >> /etc/yum.repos.d/mongodb-org-3.0.repo
+echo "name=MongoDB Repository" >> /etc/yum.repos.d/mongodb-org-3.0.repo
+echo "baseurl=http://repo.mongodb.org/yum/redhat/6/mongodb-org/3.0/x86_64/" >> /etc/yum.repos.d/mongodb-org-3.0.repo
+echo "gpgcheck=0" >> /etc/yum.repos.d/mongodb-org-3.0.repo
+echo "enabled=1" >> /etc/yum.repos.d/mongodb-org-3.0.repo
+
+yum install -y mongodb-org
+
+rm -rf /etc/yum.repos.d/mongodb-org-3.0.repo
+
+service mongod restart
+
+tail -f /var/log/mongodb/mongod.log
+
+cd $OLD_LOCATION
+
+
+mongo
+
+db.addUser("zhangsan","119"));
+db.auth("java","java");
+

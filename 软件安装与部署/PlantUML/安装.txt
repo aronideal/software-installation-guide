@@ -1,0 +1,5 @@
+
+
+安装graphviz（百度搜索）
+
+集成插件，配置指向graphvizbin或配置环境变量。

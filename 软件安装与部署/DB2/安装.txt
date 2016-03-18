@@ -1,0 +1,37 @@
+
+
+cd /tmp/
+
+tar -zxvf db2_v95_linuxx64_server.tar.gz
+
+cd db2_v95_linuxx64_server
+
+./db2_install
+
+groupadd dasadm1
+groupadd db2fadm1
+groupadd db2iadm1
+
+useradd -m -d /home/db2inst1 -gdb2iadm1 db2inst1 ¨Cp 123456
+useradd -m -d /home/db2fenc1 -gdb2fadm1 db2fenc1 ¨Cp 123456
+useradd -m -d /home/dasusr1 -g dasadm1 dasusr1 ¨Cp 123456
+
+
+´´½¨ÊµÀýdb2inst1.
+# cd /opt/ibm/db2/V9.5/instance
+# ./db2icrt -u db2fenc1 db2inst1
+
+
+
+
+
+#groupadd db2userinfo
+#useradd -m -g db2userinfo -d /home/portal2 portal2
+#passwd portal2
+
+#db2 create database portal2
+#db2 connect to portal2
+#db2 set schema=portal2
+#db2 grant connect on database to user portal2
+#db2 connect reset
+

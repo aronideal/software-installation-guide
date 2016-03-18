@@ -1,0 +1,29 @@
+
+yum -y install gcc make vim
+
+cd /tmp
+
+tar -zxvf ntp-4.2.6p5.tar.gz
+rm -rf ntp-4.2.6p5.tar.gz
+
+cd ntp-4.2.6p5
+./configure --prefix=/usr/local/ntp-4.2.6p5 --enable-all-clocks --enable-parse-clocks
+make && make install
+cd /tmp
+rm -rf ntp-4.2.6p5
+mv ntp.conf /etc/ntp.conf
+vim /etc/ntp.conf
+
+vim /etc/profile
+	export NTP_HOME=/usr/local/ntp
+	PATH=$PATH:$NTP_HOME/bin
+source /etc/profile
+
+ntpd -c /etc/ntp.conf -p /tmp/ntpd.pid
+ln -s /usr/local/ntp-4.2.6p5 /usr/local/ntp
+
+iptables -I INPUT -p udp --dport 123 -j ACCEPT
+service iptables save
+
+
+

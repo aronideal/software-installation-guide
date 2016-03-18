@@ -1,0 +1,67 @@
+
+groupadd mysql
+useradd -r -g mysql mysql
+
+cd /usr/local
+
+wget http://downloads.mysql.com/archives/get/file/mysql-5.6.21-linux-glibc2.5-x86_64.tar.gz
+tar zxvf mysql-5.6.21-linux-glibc2.5-x86_64.tar.gz
+rm -rf mysql-5.6.21-linux-glibc2.5-x86_64.tar.gz
+mv mysql-5.6.21-linux-glibc2.5-x86_64 mysql-5.6.21
+
+ln -s mysql-5.6.21 mysql
+cd mysql
+
+chown -R mysql .
+chgrp -R mysql .
+
+./scripts/mysql_install_db --user=mysql
+
+chown -R root .
+chown -R mysql data
+
+./bin/mysqld_safe --user=mysql &
+
+vim /etc/my.cnf
+	[client]
+		default-character-set = utf8
+	[mysqld]
+		character-set-server = utf8
+		
+		lower_case_table_names = 0    （0，区分大小写；1，不区分大小写）
+
+cp support-files/mysql.server /etc/init.d/mysql
+chkconfig --add mysql
+chkconfig mysql on
+service mysql restart
+
+vim /etc/profile
+	MYSQL_HOME=/usr/local/mysql
+	MANPATH=$MANPATH:$MYSQL_HOME/man
+	PATH=$PATH:$MYSQL_HOME/bin
+	export MYSQL_HOME MANPATH
+source /etc/profile
+
+mysql -u root
+
+CREATE USER 'root'@'localhost' IDENTIFIED BY '123456';
+GRANT ALL PRIVILEGES ON *.* TO 'root'@'localhost';
+
+CREATE USER 'root'@'127.0.0.1' IDENTIFIED BY '123456';
+GRANT ALL PRIVILEGES ON *.* TO 'root'@'127.0.0.1';
+
+CREATE USER 'root'@'::1' IDENTIFIED BY '123456';
+GRANT ALL PRIVILEGES ON *.* TO 'root'@'::1';
+
+CREATE USER 'root'@'%' IDENTIFIED BY '123456';
+GRANT ALL PRIVILEGES ON *.* TO 'root'@'%';
+
+SET PASSWORD FOR 'root'@'localhost' = PASSWORD('123456');
+SET PASSWORD FOR 'root'@'127.0.0.1' = PASSWORD('123456');
+SET PASSWORD FOR 'root'@'::1' = PASSWORD('123456');
+SET PASSWORD FOR 'root'@'%' = PASSWORD('123456');
+
+FLUSH PRIVILEGES;
+
+iptables -I INPUT -p tcp --dport 3306 -j ACCEPT
+service iptables save

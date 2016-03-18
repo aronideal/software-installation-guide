@@ -1,0 +1,24 @@
+
+
+°²×°jdk
+
+
+cd /usr/local/
+
+tar -zxvf heritrix-3.2.0-dist.tar.gz
+rm -rf heritrix-3.2.0-dist.tar.gz
+
+ln -s /usr/local/heritrix-3.2.0 /usr/local/heritrix
+
+export HERITRIX_HOME=/usr/local/heritrix
+
+
+vim heritrix.sh
+$HERITRIX_HOME/bin/heritrix -a admin:admin -b [IP]
+
+https://[IP]:8443
+
+
+iptables -I INPUT -p tcp --dport 8443 -j ACCEPT
+service iptables save
+

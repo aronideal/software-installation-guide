@@ -1,0 +1,18 @@
+
+# 登录到脚本环境
+./zkCli.sh
+
+# 列出指定目录下的内容
+> ls /
+
+# 在/下创建node1项
+> create /node1 /
+
+# 为node1项设置值
+> set /node1 888
+
+# 查看/node1的值
+> get /node1
+
+# 删除项
+> delete /node1

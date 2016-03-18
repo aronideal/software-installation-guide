@@ -1,0 +1,24 @@
+
+yum -y install gcc libevent-devel perl-Test-Harness
+
+cd /tmp/
+
+tar -zxvf memcached-1.4.21.tar.gz
+rm -rf memcached-1.4.21.tar.gz
+
+cd memcached-1.4.21
+./configure --prefix=/usr/local/memcached-1.4.21
+make && make test && make install
+
+ln -s /usr/local/memcached-1.4.21 /usr/local/memcached
+
+vim /usr/local/memcached/bin/memcached.sh
+
+/usr/local/memcached/bin/memcached -d -m 2048 -l 192.168.239.128 -p 11211 - u root
+
+chmod +x /usr/local/memcached/bin/memcached.sh
+ 
+
+iptables -I INPUT -p tcp --dport 11211 -j ACCEPT
+service iptables save
+

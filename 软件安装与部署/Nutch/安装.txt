@@ -1,0 +1,34 @@
+
+
+安装ANT
+
+cd /tmp
+
+mv apache-nutch-2.3-src.tar.gz /usr/local
+
+cd /usr/local
+
+tar -zxvf apache-nutch-2.3-src.tar.gz
+rm -rf apache-nutch-2.3-src.tar.gz
+
+ln -s /usr/local/apache-nutch-2.3 /usr/local/nutch
+
+NUTCH_HOME=/usr/local/nutch
+export NUTCH_HOME
+
+vim $NUTCH_HOME/conf/nutch-site.xml
+<property>
+ <name>storage.data.store.class</name>
+ <value>org.apache.gora.hbase.store.HBaseStore</value>
+ <description>Default class for storing data</description>
+</property>
+
+vim $NUTCH_HOME/ivy/ivy.xml
+可用<dependency org="org.apache.gora" name="gora-hbase" rev="0.4" conf="*->default" />
+
+vim $NUTCH_HOME/conf/gora.properties
+gora.datastore.default=org.apache.gora.hbase.store.HBaseStore
+
+cd nutch
+
+ant runtime

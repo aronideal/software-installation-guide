@@ -1,0 +1,18 @@
+
+cd /usr/local
+
+wget http://mirrors.hust.edu.cn/apache/tomcat/tomcat-7/v7.0.61/bin/apache-tomcat-7.0.61.tar.gz
+tar zxvf apache-tomcat-7.0.61.tar.gz
+rm -rf apache-tomcat-7.0.61.tar.gz
+ln -s apache-tomcat-7.0.61 apache-tomcat-7
+
+
+vim /etc/profile
+	CATALINA_HOME=/usr/local/apache-tomcat-7
+	CATALINA_BASE=/usr/local/apache-tomcat-7
+	export CATALINA_HOME CATALINA_BASE
+source /etc/profile
+
+
+iptables -I INPUT -p tcp --dport 8080 -j ACCEPT
+service iptables save

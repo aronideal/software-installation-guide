@@ -1,0 +1,15 @@
+
+Mosquitto:  http://mosquitto.org/
+
+ 
+在CentOS 6上安装Broker：
+
+1，拷贝home_oojah_mqtt.repo到/etc/yum.repos.d/目录下
+2，yum update -y
+3，yum -y install mosquitto mosquitto-clients
+
+
+mosquitto -c /etc/mosquitto/mosquitto.conf -p 1883 -d
+
+iptables -I INPUT -p tcp --dport 1883 -j ACCEPT
+service iptables save

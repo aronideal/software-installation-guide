@@ -1,0 +1,22 @@
+
+
+su ~ oracle
+
+-- 停止监听
+$ lsnrctl stop
+
+-- 登录到Oracle
+$ sqlplus "/as sysdba"
+
+-- 关闭数据库
+SQL> shutdown immediate;
+
+-- 重启数据库
+SQL> startup;
+
+-- 退出Oracle
+SQL> exit
+
+-- 启动监听
+$ lsnrctl start
+
