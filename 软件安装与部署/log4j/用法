@@ -1,0 +1,6 @@
+
+
+保存到数据库:
+<appender name="DB" class="my.DBAppender" />
+
+使用JDBCAdapter源码的改改即可，变成DBAdapter
