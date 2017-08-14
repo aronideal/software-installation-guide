@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Configuration>
+	<Appenders>
+
+		<RollingFile name="stdout" fileName="/var/logs/jmeter/template/STDOUT.log"
+			filePattern="/var/logs/jmeter/template/$${date:yyyy-MM}/STDOUT-%d{yyyy-MM-dd}-%i.log.gz">
+			<PatternLayout>
+				<Pattern>[%d{yyyy-MM-dd HH:mm:ss}] %-5level %m -- %logger{36}%n</Pattern>
+			</PatternLayout>
+			<Policies>
+				<TimeBasedTriggeringPolicy />
+				<SizeBasedTriggeringPolicy size="300 MB" />
+			</Policies>
+		</RollingFile>
+	</Appenders>
+	<Loggers>
+
+		<root level="INFO">
+			<appender-ref ref="stdout" />
+		</root>
+	</Loggers>
+</Configuration>
