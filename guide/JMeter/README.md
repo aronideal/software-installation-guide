@@ -11,12 +11,14 @@
 
 * Linux版
 
+
     $ wget http://mirrors.hust.edu.cn/apache//jmeter/binaries/apache-jmeter-3.1.tgz
     $ tar zxvf apache-jmeter-3.1.tgz
     $ cd apache-jmeter-3.1
     $ java -jar bin/ApacheJMeter.jar
 
 * Windows版
+
 
     下载 https://archive.apache.org/dist/jmeter/binaries/apache-jmeter-3.1.zip
     解压缩得到 apache-jmeter-3.1
