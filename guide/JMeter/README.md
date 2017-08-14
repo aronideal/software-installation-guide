@@ -1,5 +1,5 @@
 
-# JMeter°²×°ÓëÊ¹ÓÃ
+# JMeterå®‰è£…ä¸ä½¿ç”¨
 
     $ wget http://mirrors.hust.edu.cn/apache//jmeter/binaries/apache-jmeter-3.1.tgz
     $ tar zxvf apache-jmeter-3.1.tgz
