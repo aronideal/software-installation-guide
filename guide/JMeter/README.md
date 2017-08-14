@@ -1,23 +1,27 @@
 
 # 先决条件
 
-* 对照安装Java（已安装下载匹配的JMeter版本）
+对照安装Java（已安装下载匹配的JMeter版本）
 
         Apache JMeter 3.2 (Requires Java 8 or later)
         Apache JMeter 3.0-3.1 (Requires Java 7 or later)
         Apache JMeter 2.x requires Java 6 or later)
 
-# JMeter安装与使用（以3.1版本为例，更多版本请在[官方网站](https://archive.apache.org/dist/jmeter/binaries/)下载）
+# JMeter安装（以3.1版本为例，更多版本请在[官方网站](https://archive.apache.org/dist/jmeter/binaries/)下载）
 
-* Linux版
+Linux版
 
         $ wget http://mirrors.hust.edu.cn/apache//jmeter/binaries/apache-jmeter-3.1.tgz
         $ tar zxvf apache-jmeter-3.1.tgz
         $ cd apache-jmeter-3.1
         $ java -jar bin/ApacheJMeter.jar
 
-* Windows版
+Windows版
 
         下载 https://archive.apache.org/dist/jmeter/binaries/apache-jmeter-3.1.zip
         解压缩得到 apache-jmeter-3.1
         进入 apache-jmeter-3.1/bin，运行 java -jar ApacheJMeter.jar
+
+# 第一个Java程序的测试
+
+
