@@ -7,7 +7,7 @@
         Apache JMeter 3.0-3.1 (Requires Java 7 or later)
         Apache JMeter 2.x requires Java 6 or later)
 
-# JMeter安装与使用（以3.1版本为例）
+# JMeter安装与使用（以3.1版本为例，更多版本请在[官方网站](https://archive.apache.org/dist/jmeter/binaries/)下载）
 
 * Linux版
 
