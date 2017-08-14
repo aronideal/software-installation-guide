@@ -3,8 +3,8 @@
 <Configuration>
 	<Appenders>
 
-		<RollingFile name="stdout" fileName="/var/logs/jmeter/template/STDOUT.log"
-			filePattern="/var/logs/jmeter/template/$${date:yyyy-MM}/STDOUT-%d{yyyy-MM-dd}-%i.log.gz">
+		<RollingFile name="stdout" fileName="/var/log/net/roonten/jmeter/template/STDOUT.log"
+			filePattern="/var/log/net/roonten/jmeter/template/$${date:yyyy-MM}/STDOUT-%d{yyyy-MM-dd}-%i.log.gz">
 			<PatternLayout>
 				<Pattern>[%d{yyyy-MM-dd HH:mm:ss}] %-5level %m -- %logger{36}%n</Pattern>
 			</PatternLayout>
