@@ -3,9 +3,9 @@
 
 * 对照安装Java（已安装下载匹配的JMeter版本）
 
-      Apache JMeter 3.2 (Requires Java 8 or later)
-      Apache JMeter 3.0-3.1 (Requires Java 7 or later)
-      Apache JMeter 2.x requires Java 6 or later)
+        Apache JMeter 3.2 (Requires Java 8 or later)
+        Apache JMeter 3.0-3.1 (Requires Java 7 or later)
+        Apache JMeter 2.x requires Java 6 or later)
 
 # JMeter安装与使用（以3.1版本为例）
 
