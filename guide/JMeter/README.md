@@ -41,3 +41,10 @@ Windows版
 创建聚合报告
 
         右击“线程组”，依次选择【添加】->【监听器】->【聚合报告】
+
+# 在Linux上运行
+
+在win设置“第一个Java程序的测试”的调度器，设置启动时间、停止时间等。
+
+Linux上执行命令： sh jmeter.sh -n -t my_test.jmx -l test_*.jtl
+
