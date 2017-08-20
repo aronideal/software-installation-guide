@@ -1,2 +1,2 @@
-# Software installation guide
-软件安装指南
+# Software Installation Guide
+## 软件安装指南
