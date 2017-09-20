@@ -59,3 +59,7 @@
 	export JAVA_HOME=/usr/lib/jvm/jre-1.6.0-openjdk
 	export PATH=$JAVA_HOME/bin:$PATH
 
+## 其它Linux安装方法
+请在官网查找答案：http://openjdk.java.net/install/
+
+
