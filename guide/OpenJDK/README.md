@@ -3,10 +3,9 @@
 
 ## 安装前准备工作
 
-### 卸载干净之前已安装的OpenJDK Java环境
-yum remove *openjdk*
-rpm -qa | grep openjdk && rpm -e ...
-(建议也同样检查非OpenJDK Java环境，卸载干净)
+### 卸载干净之前已安装的OpenJDK Java环境(建议也同样检查非OpenJDK Java环境，卸载干净)
+	yum remove *openjdk*
+	rpm -qa | grep openjdk && rpm -e ...
 
 ## 安装Java开发和运行环境（JDK安装后包含JRE，无需再单独安装JRE）
 
