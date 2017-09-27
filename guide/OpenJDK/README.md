@@ -29,33 +29,13 @@
 
 ## 配置环境
 
-### JDK 8
-	export JAVA_HOME=/usr/lib/jvm/java-1.8.0-openjdk
-	export JRE_HOME=/usr/lib/jvm/jre-1.8.0-openjdk
-	export CLASSPATH=.:$JAVA_HOME/lib/tools.jar:$JAVA_HOME/lib/dt.jar
-	export PATH=$JAVA_HOME/bin:$PATH
-
-### JRE 8
-	export JAVA_HOME=/usr/lib/jvm/jre-1.8.0-openjdk
-	export PATH=$JAVA_HOME/bin:$PATH
-
-### JDK 7
-	export JAVA_HOME=/usr/lib/jvm/java-1.7.0-openjdk
-	export JRE_HOME=/usr/lib/jvm/jre-1.7.0-openjdk
-	export CLASSPATH=.:$JAVA_HOME/lib/tools.jar:$JAVA_HOME/lib/dt.jar
-	export PATH=$JAVA_HOME/bin:$PATH
-
-### JRE 7
-	export JAVA_HOME=/usr/lib/jvm/jre-1.7.0-openjdk
-	export PATH=$JAVA_HOME/bin:$PATH
-
-### JDK 6
+### JDK
 	export JAVA_HOME=/usr/lib/jvm/java-openjdk
 	export JRE_HOME=/usr/lib/jvm/jre-openjdk
 	export CLASSPATH=.:$JAVA_HOME/lib/tools.jar:$JAVA_HOME/lib/dt.jar
 	export PATH=$JAVA_HOME/bin:$PATH
 
-### JRE 6
+### JRE
 	export JAVA_HOME=/usr/lib/jvm/jre-openjdk
 	export PATH=$JAVA_HOME/bin:$PATH
 
