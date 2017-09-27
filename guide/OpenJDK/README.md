@@ -50,13 +50,13 @@
 	export PATH=$JAVA_HOME/bin:$PATH
 
 ### JDK 6
-	export JAVA_HOME=/usr/lib/jvm/java-1.6.0-openjdk
-	export JRE_HOME=/usr/lib/jvm/java-1.6.0-openjdk
+	export JAVA_HOME=/usr/lib/jvm/java-openjdk
+	export JRE_HOME=/usr/lib/jvm/jre-openjdk
 	export CLASSPATH=.:$JAVA_HOME/lib/tools.jar:$JAVA_HOME/lib/dt.jar
 	export PATH=$JAVA_HOME/bin:$PATH
 
 ### JRE 6
-	export JAVA_HOME=/usr/lib/jvm/jre-1.6.0-openjdk
+	export JAVA_HOME=/usr/lib/jvm/jre-openjdk
 	export PATH=$JAVA_HOME/bin:$PATH
 
 ## 其它Linux安装方法
