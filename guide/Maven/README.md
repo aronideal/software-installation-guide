@@ -98,6 +98,12 @@
 </distributionManagement>
 ```
 
+## 快速打包、快速发布
+
+    clean -> build -> package
+    
+    clean -> build -> deploy
+
 ## 插件的使用
 
 [Apache Maven 插件](https://github.com/aronideal/experience-sharing/blob/master/auickly/org.apache.maven.plugins.md)
