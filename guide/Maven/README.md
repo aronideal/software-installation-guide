@@ -59,7 +59,29 @@
 
 ## pom.xml配置
 
-### 试项目可deploy到私服
+### 配置依赖包的引用。如：
+
+```xml
+<dependency>
+    <groupId>commons-io</groupId>
+    <artifactId>commons-io</artifactId>
+    <version>2.2</version>
+</dependency>
+```
+
+当使用本地依赖包时，需配置到pom.xml才可被Maven管理，以便打包或其它操作，使用&lt;systemPath&gt;标记表明jar包所在的本地位置。如：
+
+```xml
+<dependency>
+    <groupId>com.test</groupId>
+    <artifactId>mytool</artifactId>
+    <version>1.0</version>
+    <scope>system</scope>
+    <systemPath>${project.basedir}/src/main/webapp/WEB-INF/lib/mytool-1.0.jar</systemPath>
+</dependency>
+```
+
+### 试项目可deploy到私服。如：
 
 ```xml
 <distributionManagement>
