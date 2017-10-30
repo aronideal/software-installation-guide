@@ -25,13 +25,13 @@
 
     $ vim $MAVEN_HOME/conf/settings.xml
     
-1. 指定下载仓库位置。改变&lt;localRepository&gt;的值，如：
+1. 指定本地库目录。改变&lt;localRepository&gt;的值，如：
 
 ```xml
 <localRepository>/opt/.m2/repository</localRepository>
 ```
 
-2. 设置私服登录信息（使用私服服务器时需要配置）。可配置多个，被&lt;servers&gt;包围。
+2. 设置私服登录信息（使用私服时需配置）。可配置多个，被&lt;servers&gt;包围。
 
 ```xml
 <server>
