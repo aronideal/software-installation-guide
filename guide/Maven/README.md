@@ -31,7 +31,7 @@
 <localRepository>/opt/.m2/repository</localRepository>
 ```
 
-2. 设置私服登录信息（使用私服时需配置）。可配置多个，被&lt;servers&gt;包围。
+2. 设置私服登录信息（使用私服时需配置）。可配置多个，被&lt;servers&gt;包围，如：
 
 ```xml
 <server>
@@ -39,6 +39,16 @@
     <username>admin</username>
     <password>admin123</password>
 </server>
+```
+
+3. 设置私服镜像位置（使用私服时需配置）。可配置多个，被&lt;mirrors&gt;包围，如：
+
+```xml
+<mirror>
+    <id>nexus</id>
+    <mirrorOf>*</mirrorOf>
+    <url>http://www.roonten.com:8081/nexus/content/groups/public</url>
+</mirror>
 ```
 
 ## 集成到Eclipse
