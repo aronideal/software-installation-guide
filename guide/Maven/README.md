@@ -63,10 +63,12 @@
 
 ```xml
 <distributionManagement>
+    <!-- Release版 -->
     <repository>
         <id>releases</id>
         <url>http://www.roonten.com:8081/nexus/content/repositories/releases</url>
     </repository>
+    <!-- Snapshot版 -->
     <snapshotRepository>
         <id>snapshots</id>
         <url>http://www.roonten.com:8081/nexus/content/repositories/snapshots</url>
