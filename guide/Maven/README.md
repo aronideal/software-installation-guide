@@ -31,13 +31,13 @@
 <localRepository>/opt/.m2/repository</localRepository>
 ```
 
-2. 设置登录信息（使用私服服务器时）
+2. 设置登录信息（使用私服服务器时需要配置）
 
 ```xml
 <server>
-    <id>deploymentRepo</id>
-    <username>repouser</username>
-    <password>repopwd</password>
+    <id>nexus</id>
+    <username>admin</username>
+    <password>admin123</password>
 </server>
 ```
 
