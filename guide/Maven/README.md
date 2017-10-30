@@ -110,11 +110,11 @@
 
 ### 3.输入Maven命令，下图：
 
-![maven-command](res/package-1.png)
+![command](res/command.png)
 
 ### 4.打包，下图：
 
-![package](res/package-2.png)
+![package](res/package.png)
 
 ## 快速发布
 
@@ -128,7 +128,7 @@
 
 ### 3.输入Maven命令，下图：
 
-![maven-command](res/package-1.png)
+![command](res/command.png)
 
 ### 4.发布，下图：
 
