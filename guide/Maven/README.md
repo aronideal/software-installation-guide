@@ -53,4 +53,6 @@
 
 # 私服搭建
 
+[Nexus](https://github.com/aronideal/software-installation-guide/blob/master/guide/Nexus)
+
 # 集成到Eclipse
