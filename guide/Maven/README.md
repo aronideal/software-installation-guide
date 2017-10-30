@@ -25,10 +25,20 @@
 
     $ vim $MAVEN_HOME/conf/settings.xml
     
-修改&lt;localRepository&gt;/path/to/local/repo&lt;/localRepository&gt;为指定路径，如：
+1. 指定下载仓库位置。改变&lt;localRepository&gt;/path/to/local/repo&lt;/localRepository&gt;值，如：
 
 ```xml
 <localRepository>/opt/.m2/repository</localRepository>
+```
+
+2. 设置登录信息（使用私服服务器时）
+
+```xml
+<server>
+    <id>deploymentRepo</id>
+    <username>repouser</username>
+    <password>repopwd</password>
+</server>
 ```
 
 ## 集成到Eclipse
