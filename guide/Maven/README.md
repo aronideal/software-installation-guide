@@ -56,3 +56,20 @@
 [Nexus](https://github.com/aronideal/software-installation-guide/blob/master/guide/Nexus)
 
 # 集成到Eclipse
+
+## pom.xml配置
+
+### 试项目可deploy到私服
+
+```xml
+<distributionManagement>
+    <repository>
+        <id>releases</id>
+        <url>http://www.roonten.com:8081/nexus/content/repositories/releases</url>
+    </repository>
+    <snapshotRepository>
+        <id>snapshots</id>
+        <url>http://www.roonten.com:8081/nexus/content/repositories/snapshots</url>
+    </snapshotRepository>
+</distributionManagement>
+```
