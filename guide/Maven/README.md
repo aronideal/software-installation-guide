@@ -104,6 +104,8 @@
     
     clean -> build -> deploy
 
+![clean](res/clean.png)
+
 ## 插件的使用
 
 [Apache Maven 插件](https://github.com/aronideal/experience-sharing/blob/master/auickly/org.apache.maven.plugins.md)
