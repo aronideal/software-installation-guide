@@ -100,37 +100,37 @@
 
 ## 快速打包
 
-### 步骤1，下图：
+### 1.clean，下图：
 
 ![clean](res/clean.png)
 
-### 步骤2，下图：
+### 2.Eclipse Clean，下图：
 
 ![clean](res/eclipse-clean.png)
 
-### 步骤3，下图：
+### 3.输入Maven命令，下图：
 
 ![maven-command](res/package-1.png)
 
-### 步骤4，下图：
+### 4.打包，下图：
 
 ![package](res/package-2.png)
 
 ## 快速发布
 
-### 步骤1，下图：
+### 1.clean，下图：
 
 ![clean](res/clean.png)
 
-### 步骤2，下图：
+### 2.Eclipse Clean，下图：
 
 ![clean](res/eclipse-clean.png)
 
-### 步骤3，下图：
+### 3.输入Maven命令，下图：
 
 ![maven-command](res/package-1.png)
 
-### 步骤4，下图：
+### 4.发布，下图：
 
 ![deploy](res/deploy.png)
 
