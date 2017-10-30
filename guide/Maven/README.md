@@ -26,6 +26,9 @@
     $ vim $MAVEN_HOME/conf/settings.xml
     
 修改&lt;localRepository&gt;/path/to/local/repo&lt;/localRepository&gt;为指定路径，如：
-&lt;localRepository&gt;/opt/.m2/repository&lt;/localRepository&gt;
+
+```xml
+<localRepository>/opt/.m2/repository</localRepository>
+```
 
 ## 集成到Eclipse
