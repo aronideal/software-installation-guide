@@ -33,17 +33,17 @@
 
 ## 修改配置文件 jupyter_notebook_config.py
 
-### 去掉 c.NotebookApp.notebook_dir 前边的 # ，值配置成以下形式：
-    
-    c.NotebookApp.notebook_dir = 'D:\jupyter\notebook'
+### 去掉 c.NotebookApp.notebook_dir 前边的 #，值配置成以下形式：
+
+    c.NotebookApp.notebook_dir = 'D:\jupyter\notebook'
 
 ### 其它配置项依个人喜好修改
 
-### 注意，配置文件中如果需要书写中文，请使用工具格式化成 ASCII 形式存入，不能直接写中文形式进去。例如：
+### 注意，配置文件中如果需要书写中文，请使用工具格式化成 ASCII 形式存入，不能直接写入中文形式。例如：
 
     c.NotebookApp.notebook_dir = 'D:/\u5174\u8da3/jupyter/notebook'
 
-# 启动时同时加载配置文件
+# 启动，同时加载配置文件
 
     jupyter notebook --config D:\兴趣\jupyter\config\jupyter_notebook_config.py
 
