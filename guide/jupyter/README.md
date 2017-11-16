@@ -7,5 +7,7 @@ pip uninstall jupyter
 pip install jupyter
 
 # 启动
-jupyter notebook
+创建 D:\jupyter\notebook 目录，或自定义
+
+jupyter notebook --notebook-dir D:\jupyter\notebook
 
