@@ -47,7 +47,7 @@
 
     jupyter notebook --config D:\jupyter\config\jupyter_notebook_config.py
 
-还可以直接使用 [bat 脚本](/start-jupyter-web.bat)，不用每次都用命令行启动。
+还可以直接使用 [bat 脚本](/start-jupyter-web.bat)（配置路径请自行修改），不用每次都用命令行启动。
 
 # 快捷键
 
