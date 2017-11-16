@@ -45,7 +45,9 @@
 
 # 启动，同时加载配置文件
 
-    jupyter notebook --config D:\兴趣\jupyter\config\jupyter_notebook_config.py
+    jupyter notebook --config D:\jupyter\config\jupyter_notebook_config.py
+
+还可以直接使用 [bat 脚本](/start-jupyter-web.bat)，不用每次都用命令行启动。
 
 # 快捷键
 
