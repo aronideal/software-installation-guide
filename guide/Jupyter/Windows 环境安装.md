@@ -33,9 +33,9 @@
 
 ## 修改配置文件 jupyter_notebook_config.py
 
-### 去掉 c.NotebookApp.notebook_dir 前边的 #，使生效。值配置成以下形式：
+### 去掉 c.NotebookApp.notebook_dir 前边的 #，使生效。值配置成以下形式，路径使用 / 分隔，而不是 \：
 
-    c.NotebookApp.notebook_dir = 'D:\jupyter\notebook'
+    c.NotebookApp.notebook_dir = 'D:/jupyter/notebook'
 
 ### 其它配置项依个人喜好修改
 
