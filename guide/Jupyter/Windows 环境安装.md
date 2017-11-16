@@ -1,19 +1,19 @@
 
-# 先决条件
+# 1. 先决条件
 
-先安装好 python3 支持
+* 先安装好 python3 支持
 
-# 安装
+# 2. 安装软件
 
     pip install jupyter
 
-# 更新
+# 3. 更新更新
 
     pip uninstall jupyter
     
     pip install jupyter
 
-# 配置 Jupyter
+# 4. 配置 Jupyter
 
 ## 确定创建自定义目录的路径，如：
 
@@ -43,21 +43,21 @@
 
     c.NotebookApp.notebook_dir = 'D:/\u5174\u8da3/jupyter/notebook'
 
-# 启动，同时加载配置文件
+# 5. 启动，同时加载配置文件
 
     jupyter notebook --config D:\jupyter\config\jupyter_notebook_config.py
 
 还可以直接使用 [bat 脚本](./start-jupyter-web.bat)（配置路径请自行修改），不用每次都用命令行启动。
 
-# 快捷键
+# 6. 快捷键
 
-## Shift+Tab 单击，简略帮助；双击，完整帮助
+* Shift+Tab 单击，简略帮助；双击，完整帮助
 
-## Ctrl+S 保存文件
+* Ctrl+S 保存文件
 
-## Shift-Enter : 运行本单元，选中下个单元
+* Shift-Enter : 运行本单元，选中下个单元
 
-## Ctrl-Enter : 运行本单元
+* Ctrl-Enter : 运行本单元
 
-## Alt-Enter : 运行本单元，在其下插入新单元
+* Alt-Enter : 运行本单元，在其下插入新单元
 
