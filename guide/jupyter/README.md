@@ -1,15 +1,46 @@
 
 # 安装
+
 pip install jupyter
 
 # 更新
+
 pip uninstall jupyter
 pip install jupyter
 
-# 启动
-创建 D:\jupyter\notebook 目录，或自定义
+# 配置 Jupyter
 
-jupyter notebook --notebook-dir D:\jupyter\notebook
+## 确定创建自定义目录的路径，如：
+
+    D:\
+
+## 创建需要的目录
+
+    mkdir D:\jupyter\config
+    
+    mkdir D:\jupyter\notebook
+
+## 生成配置文件，放到 config 目录下
+
+执行完以下命令，会打印出配置文件生成的位置。找到后copy到config目录下
+
+    jupyter notebook --generate-config
+
+## 修改配置文件 jupyter_notebook_config.py
+
+### 去掉 c.NotebookApp.notebook_dir 前边的 # ，值配置成以下形式：
+    
+    c.NotebookApp.notebook_dir = 'D:\jupyter\notebook'
+
+### 其它配置项依个人喜好修改
+
+### 注意，配置文件中如果需要书写中文，请使用工具格式化成 ASCII 形式存入，不能直接写中文形式进去。例如：
+
+    c.NotebookApp.notebook_dir = 'D:/\u5174\u8da3/jupyter/notebook'
+
+# 启动时同时加载配置文件
+
+    jupyter notebook --config D:\兴趣\jupyter\config\jupyter_notebook_config.py
 
 # 快捷键
 
