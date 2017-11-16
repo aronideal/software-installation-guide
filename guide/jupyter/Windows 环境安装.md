@@ -29,7 +29,7 @@
 
 执行完以下命令，会打印出配置文件生成的位置。找到后copy到config目录下
 
-    jupyter notebook --generate-config
+    jupyter notebook --generate-config
 
 ## 修改配置文件 jupyter_notebook_config.py
 
