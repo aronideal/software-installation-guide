@@ -1,12 +1,17 @@
 
+# 先决条件
+
+先安装好 python3 支持
+
 # 安装
 
-pip install jupyter
+    pip install jupyter
 
 # 更新
 
-pip uninstall jupyter
-pip install jupyter
+    pip uninstall jupyter
+    
+    pip install jupyter
 
 # 配置 Jupyter
 
