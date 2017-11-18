@@ -9,7 +9,7 @@
     
     pip install jupyter
 
-# 3. 更新更新
+# 3. 更新软件
 
     pip uninstall jupyter
     
