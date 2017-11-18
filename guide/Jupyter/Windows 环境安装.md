@@ -5,6 +5,8 @@
 
 # 2. 安装软件
 
+    python3 -m pip install --upgrade pip
+    
     pip install jupyter
 
 # 3. 更新更新
