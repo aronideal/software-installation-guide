@@ -1,5 +1,5 @@
 
-# OpenJDK安装与配置
+# OpenJDK 安装与配置
 
 ## 安装前准备工作
 
@@ -28,25 +28,67 @@
 
 	$ sudo apt-get purge oracle-java8-jdk
 
-## 安装Java开发和运行环境（JDK安装后包含JRE，无需再单独安装JRE）
+## 安装过程
 
-### JDK 8
-	yum install -y java-1.8.0-openjdk-devel
+### 安装 Java 开发环境（JDK 包含 JRE，无需再单独安装 JRE）
 
-### JRE 8
-	yum install -y java-1.8.0-openjdk
+#### CentOS
 
-### JDK 7
-	yum install -y java-1.7.0-openjdk-devel
+##### JDK 8
 
-### JRE 7
-	yum install -y java-1.7.0-openjdk
+	$ sudo yum install -y java-1.8.0-openjdk-devel
 
-### JDK 6
-	yum install -y java-1.6.0-openjdk-devel
+##### JDK 7
 
-### JRE 6
-	yum install -y java-1.6.0-openjdk
+	$ sudo yum install -y java-1.7.0-openjdk-devel
+
+##### JDK 6
+
+	$ sudo yum install -y java-1.6.0-openjdk-devel
+
+#### Debian && Ubuntu
+
+##### JDK 8
+
+	$ sudo apt-get install openjdk-8-jdk
+
+##### JDK 7
+
+	$ sudo apt-get install openjdk-7-jdk
+
+##### JDK 6
+
+	$ sudo apt-get install openjdk-6-jdk
+
+### 安装 Java 运行环境
+
+#### CentOS
+
+##### JRE 8
+
+	$ sudo yum install -y java-1.8.0-openjdk
+
+##### JRE 7
+
+	$ sudo yum install -y java-1.7.0-openjdk
+
+##### JRE 6
+
+	$ sudo yum install -y java-1.6.0-openjdk
+
+#### Debian && Ubuntu
+
+##### JRE 8
+
+	$ sudo apt-get install openjdk-8-jre
+
+##### JRE 7
+
+	$ sudo apt-get install openjdk-7-jre
+
+##### JRE 6
+
+	$ sudo apt-get install openjdk-6-jre
 
 ## 配置环境
 
