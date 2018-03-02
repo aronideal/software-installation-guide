@@ -97,8 +97,11 @@
 #### CentOS
 
 	export JAVA_HOME=/usr/lib/jvm/java-openjdk
+
 	export JRE_HOME=/usr/lib/jvm/jre-openjdk
+
 	export CLASSPATH=.:$JAVA_HOME/lib/tools.jar:$JAVA_HOME/lib/dt.jar
+
 	export PATH=$JAVA_HOME/bin:$PATH
 
 #### Debian、Ubuntu
@@ -108,6 +111,7 @@
 #### CentOS
 
 	export JAVA_HOME=/usr/lib/jvm/jre-openjdk
+
 	export PATH=$JAVA_HOME/bin:$PATH
 
 #### Debian、Ubuntu
