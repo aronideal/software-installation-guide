@@ -16,13 +16,13 @@
 
 #### Debian && Ubuntu
 
-##### 从候选项列表移除要卸载的java路径：
+##### 从候选项列表移除要卸载的java路径
 
 	$ update-alternatives --list java
 
 	$ sudo update-alternatives --remove java /usr/lib/jvm/jdk-8-oracle-arm32-vfp-hflt/bin/java
 
-##### 查找到需要卸载的java包，并卸载掉，如oracle-java8-jdk：
+##### 查找到需要卸载的java包，并卸载（如oracle-java8-jdk）
 
 	$ dpkg --list | grep java
 
