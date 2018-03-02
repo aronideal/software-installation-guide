@@ -106,6 +106,8 @@
 
 #### Debian、Ubuntu
 
+略
+
 ### 配置运行环境
 
 #### CentOS
@@ -115,6 +117,8 @@
 	export PATH=$JAVA_HOME/bin:$PATH
 
 #### Debian、Ubuntu
+
+略
 
 ## 更多安装方法
 请在官网查找：http://openjdk.java.net/install/
