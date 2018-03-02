@@ -14,7 +14,7 @@
 	rpm -qa | grep jre && rpm -e ...
 	rpm -qa | grep java && rpm -e ...
 
-*Debian && Ubuntu
+* Debian && Ubuntu
 
 从候选项列表移除要卸载的java路径：
 
