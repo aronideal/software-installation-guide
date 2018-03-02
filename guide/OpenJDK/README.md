@@ -14,7 +14,7 @@
 	rpm -qa | grep jre && rpm -e ...
 	rpm -qa | grep java && rpm -e ...
 
-#### Debian && Ubuntu
+#### Debian、Ubuntu
 
 ##### 从候选项列表移除要卸载的java路径
 
@@ -46,19 +46,19 @@
 
 	$ sudo yum install -y java-1.6.0-openjdk-devel
 
-#### Debian && Ubuntu
+#### Debian、Ubuntu
 
 ##### JDK 8
 
-	$ sudo apt-get install openjdk-8-jdk
+	$ sudo apt-get install -y openjdk-8-jdk
 
 ##### JDK 7
 
-	$ sudo apt-get install openjdk-7-jdk
+	$ sudo apt-get install -y openjdk-7-jdk
 
 ##### JDK 6
 
-	$ sudo apt-get install openjdk-6-jdk
+	$ sudo apt-get install -y openjdk-6-jdk
 
 ### 安装 Java 运行环境
 
@@ -80,15 +80,15 @@
 
 ##### JRE 8
 
-	$ sudo apt-get install openjdk-8-jre
+	$ sudo apt-get install -y openjdk-8-jre
 
 ##### JRE 7
 
-	$ sudo apt-get install openjdk-7-jre
+	$ sudo apt-get install -y openjdk-7-jre
 
 ##### JRE 6
 
-	$ sudo apt-get install openjdk-6-jre
+	$ sudo apt-get install -y openjdk-6-jre
 
 ## 配置环境
 
