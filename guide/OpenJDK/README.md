@@ -24,7 +24,7 @@
 
 ##### 查找到需要卸载的java包，并卸载掉，如oracle-java8-jdk：
 
-	$ dpkg --list
+	$ dpkg --list | grep java
 
 	$ sudo apt-get purge oracle-java8-jdk
 
