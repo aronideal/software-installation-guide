@@ -5,7 +5,7 @@
 
 ### 卸载干净之前已安装的OpenJDK Java环境(建议也同样检查非Java环境，卸载干净)
 
-CentOS
+* CentOS
 
 	$ sudo yum remove *jdk*
 	$ sudo yum remove *jre*
@@ -14,7 +14,7 @@ CentOS
 	rpm -qa | grep jre && rpm -e ...
 	rpm -qa | grep java && rpm -e ...
 
-Debian && Ubuntu
+*Debian && Ubuntu
 
 从候选项列表移除要卸载的java路径：
 
