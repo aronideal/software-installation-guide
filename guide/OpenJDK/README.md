@@ -92,15 +92,25 @@
 
 ## 配置环境
 
-### JDK
+### 配置 Java 开发环境
+
+#### CentOS
+
 	export JAVA_HOME=/usr/lib/jvm/java-openjdk
 	export JRE_HOME=/usr/lib/jvm/jre-openjdk
 	export CLASSPATH=.:$JAVA_HOME/lib/tools.jar:$JAVA_HOME/lib/dt.jar
 	export PATH=$JAVA_HOME/bin:$PATH
 
-### JRE
+#### Debian、Ubuntu
+
+### 配置 Java 运行环境
+
+#### CentOS
+
 	export JAVA_HOME=/usr/lib/jvm/jre-openjdk
 	export PATH=$JAVA_HOME/bin:$PATH
+
+#### Debian、Ubuntu
 
 ## 更多安装方法
 请在官网查找：http://openjdk.java.net/install/
