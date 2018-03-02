@@ -28,9 +28,9 @@
 
 	$ sudo apt-get purge oracle-java8-jdk
 
-## 安装过程
+## 安装软件
 
-### 安装 Java 开发环境（JDK 包含 JRE，无需再单独安装 JRE）
+### 安装开发环境（JDK 包含 JRE，无需再单独安装 JRE）
 
 #### CentOS
 
@@ -60,7 +60,7 @@
 
 	$ sudo apt-get install -y openjdk-6-jdk
 
-### 安装 Java 运行环境
+### 安装运行环境
 
 #### CentOS
 
@@ -92,7 +92,7 @@
 
 ## 配置环境
 
-### 配置 Java 开发环境
+### 配置开发环境
 
 #### CentOS
 
@@ -103,7 +103,7 @@
 
 #### Debian、Ubuntu
 
-### 配置 Java 运行环境
+### 配置运行环境
 
 #### CentOS
 
