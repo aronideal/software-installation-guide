@@ -12,3 +12,13 @@
 ## 先决条件
 
 Java SDK 1.6+
+
+## 安装
+
+#### 解压缩安装包
+
+    $ sudo cp nexus-2.14.8-01-bundle.tar.gz /usr/local
+    $ cd /usr/local
+    $ sudo tar xvzf nexus-2.14.8-01-bundle.tar.gz
+    $ sudo ln -s nexus-2.14.8-01 nexus
+
