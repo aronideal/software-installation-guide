@@ -3,7 +3,7 @@
 
 ## 下载
 
-
+[百度网盘](https://pan.baidu.com/s/1eJi_mPPJqI5aeQL9qt4cEQ)
 
 ## 校验安装包
 
