@@ -1,6 +1,6 @@
 
 
-°²×°jdk
+å®‰è£…jdk
 
 
 cd /usr/local/
