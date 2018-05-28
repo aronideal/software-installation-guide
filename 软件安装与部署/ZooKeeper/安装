@@ -22,3 +22,5 @@ tail -f zookeeper.out
 
 ps -ef | grep zookeeper
 
+
+客户端测试：bin/zkCli.sh -server 127.0.0.1:2181
