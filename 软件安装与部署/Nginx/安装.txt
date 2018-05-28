@@ -13,7 +13,6 @@ nginx -c /etc/nginx/nginx.conf
 nginx -s reload
 
 
-≈‰÷√£∫
 http {
     upstream myhome {
         server server1;
@@ -28,3 +27,16 @@ http {
         }
     }
 }
+
+== Yum ÊñπÂºè ======================================================================================
+vim /etc/yum.repos.d/nginx.repo
+[nginx]
+name=nginx repo
+baseurl=http://nginx.org/packages/centos/6/$basearch/
+gpgcheck=0
+enabled=1
+
+yum install nginx
+
+nginx -c /etc/nginx/nginx.conf
+nginx -s reload
