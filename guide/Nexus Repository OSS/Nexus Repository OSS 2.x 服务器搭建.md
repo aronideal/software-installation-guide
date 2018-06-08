@@ -33,6 +33,10 @@ Nexus Repository OSS 2.x 服务器搭建
 
 	$ ln -s /opt/install/sonatype-work sonatype-work
 
-## 6. 配置
+## 6. 配置 Nexus 服务端口号（推荐忽略，默认端口 8081）
 
-	$ cd nexus
+	$ vim /usr/local/nexus/conf/nexus.properties
+
+## 7. 进行访问 Nexus 主页
+
+	http://ip:8081/nexus
