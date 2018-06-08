@@ -11,7 +11,7 @@ Nginx 服务器搭建 （CentOS 7）
 
 	$ sudo yum update -y
 
-## 3. 制定 Nginx 安装包 yum 源
+## 3. 指定 Nginx 安装包 Yum 源
 
 	$ sudo vim /etc/yum.repos.d/nginx.repo
 
