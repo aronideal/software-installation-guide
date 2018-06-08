@@ -1,4 +1,4 @@
-GitLab 服务器搭建 (CentOS 7)
+GitLab 服务器搭建 （CentOS 7）
 =================
 
 ## 1. 创建 GitLab 服务器登录账户，并切换至
