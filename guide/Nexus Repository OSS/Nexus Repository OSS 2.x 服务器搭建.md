@@ -1,5 +1,5 @@
-Nexus Repository OSS 2.x 服务器搭建
-===================================
+Nexus Repository OSS 2.x 服务器搭建 （CentOS 7）
+==============================================
 
 ## 1. 创建 Nexus 服务器登录账户，并切换至
 
@@ -13,29 +13,29 @@ Nexus Repository OSS 2.x 服务器搭建
 
 ## 3. 创建基本目录
 
-	$ mkdir -p /opt/softs
+	$ sudo mkdir -p /opt/softs
 
-	$ mkdir -p /opt/install
+	$ sudo mkdir -p /opt/install
 
 	$ cd /opt/install
 
 ## 4. 下载安装包
 
-	$ wget http://www.sonatype.org/downloads/nexus-latest-bundle.tar.gz
+	$ sudo wget http://www.sonatype.org/downloads/nexus-latest-bundle.tar.gz
 
-	$ tar -zxvf nexus-*.tar.gz && mv nexus-*.tar.gz ../softs
+	$ sudo tar -zxvf nexus-*.tar.gz && sudo mv nexus-*.tar.gz ../softs
 
 ## 5. 创建 Nexus 引用
 
 	$ cd /usr/local
 
-	$ ln -s /opt/install/nexus-* nexus
+	$ sudo ln -s /opt/install/nexus-* nexus
 
-	$ ln -s /opt/install/sonatype-work sonatype-work
+	$ sudo ln -s /opt/install/sonatype-work sonatype-work
 
 ## 6. 配置 Nexus 服务端口号（推荐忽略，默认端口 8081）
 
-	$ vim /usr/local/nexus/conf/nexus.properties
+	$ sudo vim /usr/local/nexus/conf/nexus.properties
 
 ## 7. 进行访问 Nexus 主页
 
