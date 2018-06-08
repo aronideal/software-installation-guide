@@ -7,7 +7,7 @@ GitLab 服务器搭建 （CentOS 7）
 	
 	# su - gitlab
 
-## 2. 生成 yum 源
+## 2. 生成 Yum 源
 
 	$ curl -s https://packages.gitlab.com/install/repositories/gitlab/gitlab-ce/script.rpm.sh | sudo bash
 
