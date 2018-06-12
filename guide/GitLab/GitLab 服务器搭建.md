@@ -47,6 +47,10 @@ GitLab 服务器搭建 （CentOS 7）
 
 	gitlab_rails['smtp_force_ssl'] = false
 
+	gitlab_rails['gitlab_email_from'] = '发件人邮箱地址'
+
+	gitlab_rails['gitlab_email_display_name'] = '发件人姓名'
+
 ## 6. 使配置生效，并启动 GitLab 服务（这一步请耐心等待全部执行完成跳到命令行）
 
 	$ sudo gitlab-ctl reconfigure
