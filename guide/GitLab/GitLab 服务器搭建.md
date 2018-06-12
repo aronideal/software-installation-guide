@@ -55,6 +55,10 @@ GitLab 服务器搭建 （CentOS 7）
 
 	$ sudo gitlab-rails console
 
+#### 7.1. 测试邮箱配置
+
+	> Notify.test_email('收件邮箱地址', '邮件主题', '邮件内容').deliver_now
+
 ## 8. 检查 GitLab 服务启动状态，然后用外部访问地址进行访问
 
 	$ sudo gitlab-ctl status
