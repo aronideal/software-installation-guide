@@ -51,13 +51,17 @@ GitLab 服务器搭建 （CentOS 7）
 
 	$ sudo gitlab-ctl reconfigure
 
-## 7. 检查 GitLab 服务启动状态，然后用外部访问地址进行访问
+## 7. 测试 GitLab 配置的正确性
+
+	$ gitlab-rails console
+
+## 8. 检查 GitLab 服务启动状态，然后用外部访问地址进行访问
 
 	$ sudo gitlab-ctl status
 
 	http://xxx.com
 
-## 8. 初次访问 GitLab 页面，需设置 GitLab root 的用户密码
+## 9. 初次访问 GitLab 页面，需设置 GitLab root 的用户密码
 
 注意，这里的密码不是服务器系统 root 的密码
 
