@@ -53,7 +53,7 @@ GitLab 服务器搭建 （CentOS 7）
 
 ## 7. 测试 GitLab 配置的正确性
 
-	$ gitlab-rails console
+	$ sudo gitlab-rails console
 
 ## 8. 检查 GitLab 服务启动状态，然后用外部访问地址进行访问
 
