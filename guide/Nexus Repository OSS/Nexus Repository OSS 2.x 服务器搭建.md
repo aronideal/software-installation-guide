@@ -40,3 +40,25 @@ Nexus Repository OSS 2.x 服务器搭建 （CentOS 7）
 ## 7. 进行访问 Nexus 主页
 
 	http://ip:8081/nexus
+
+## 8. 基本配置
+
+用默认密码登录: admin/admin123
+
+#### 配置发信邮箱
+
+点击： Administration/Server
+SMTP Settings:
+
+#### 设置远程超时时间
+
+> 60 seconds
+
+
+
+
+
+
+
+
+
